@@ -41,7 +41,27 @@ Renderizar em 1080p a 60 fps:
 python -m manim -r 1920,1080 --fps 60 .\power_system_inertia_stability.py PowerSystemInertiaStability
 ```
 
+## Estrutura modular
+
+Na branch `arquivos-python-separados-por-slide`, o arquivo
+`power_system_inertia_stability.py` funciona como arquivo mestre: ele define o
+flag `LANGUAGE` e chama os slides na ordem declarada em `SLIDE_SEQUENCE`.
+
+Os helpers compartilhados ficam em `power_system_inertia/base.py`. Cada slide
+tem sua própria pasta em `power_system_inertia/slides/`, por exemplo
+`slide_01_balance/slide.py`, `slide_02_disturbance/slide.py` e assim por diante.
+
+O dicionário de idiomas fica em `power_system_inertia/languages.py`. O flag pode
+ser ajustado para:
+
+- `pt`: português
+- `en`: inglês
+- `de`: alemão
+- `zh`: chinês
+
+Entradas ainda não traduzidas retornam automaticamente ao texto original em
+português, permitindo completar a tradução aos poucos.
+
 ## Arquivos publicados
 
 Este repositório publica apenas o projeto Python necessário para gerar a animação. Arquivos de vídeo renderizados, previews, caches e saídas locais do Manim são intencionalmente excluídos do versionamento.
-
