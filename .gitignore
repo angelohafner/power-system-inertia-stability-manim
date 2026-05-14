@@ -1,0 +1,28 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Manim outputs
+media/
+*.mp4
+*.mov
+*.webm
+
+# Local previews and QA artifacts
+preview*/
+qa*/
+*.jpg
+*.png
+load_icon_preview.py
+
+# Local notes generated during iteration
+diff_summary*.md
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editor files
+.vscode/
+.idea/
