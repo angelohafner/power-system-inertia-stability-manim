@@ -89,7 +89,8 @@ class PowerSystemInertiaBase(Scene):
     def make_caption(self, text, width=10.8, font_size=25):
         text = self.tr(text)
         caption = self.Text(text, font_size=font_size, color=self.colors["text"], line_spacing=0.85)
-        caption.set_width(width)
+        if caption.width > width:
+            caption.set_width(width)
         return caption
 
     def equation_box(self, equation, color=None, buff=0.18):

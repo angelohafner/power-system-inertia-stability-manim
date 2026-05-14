@@ -223,6 +223,9 @@ EN = {
     "atrito mecânico + enrolamentos amortecedores": "mechanical friction + damper windings",
     "Na rede:": "At the grid:",
     r"\frac{\partial P_{carga}}{\partial f}": r"\frac{\partial P_{load}}{\partial f}",
+    r"\frac{\partial P_{carga}}{\partial f}>0\ \Rightarrow\ \text{carga ajuda a amortecer a queda de frequência}": (
+        r"\frac{\partial P_{load}}{\partial f}>0\ \Rightarrow\ \text{load helps damp the frequency drop}"
+    ),
     "auto-regulação da carga, tipicamente 1 a 2 \\%/Hz": (
         "load self-regulation, typically 1 to 2 \\%/Hz"
     ),
@@ -274,6 +277,9 @@ LANGUAGES = {
         "Gerador": "Generator",
         "Rede": "Netz",
         "Carga": "Last",
+        r"\frac{\partial P_{carga}}{\partial f}>0\ \Rightarrow\ \text{carga ajuda a amortecer a queda de frequência}": (
+            r"\frac{\partial P_{load}}{\partial f}>0\ \Rightarrow\ \text{Last daempft den Frequenzabfall}"
+        ),
     },
     "zh": {
         "Resumo": "总结",
@@ -283,5 +289,8 @@ LANGUAGES = {
         "Gerador": "发电机",
         "Rede": "电网",
         "Carga": "负荷",
+        r"\frac{\partial P_{carga}}{\partial f}>0\ \Rightarrow\ \text{carga ajuda a amortecer a queda de frequência}": (
+            r"\frac{\partial P_{load}}{\partial f}>0\ \Rightarrow\ \text{load damping supports frequency}"
+        ),
     },
 }
