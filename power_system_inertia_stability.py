@@ -1,3 +1,5 @@
+import os
+
 from power_system_inertia.base import PowerSystemInertiaBase
 from power_system_inertia.slides.slide_01_balance import slide as slide_01_balance
 from power_system_inertia.slides.slide_02_disturbance import slide as slide_02_disturbance
@@ -15,7 +17,8 @@ from power_system_inertia.slides.slide_13_summary import slide as slide_13_summa
 
 
 # Change this flag to "pt", "en", "de", or "zh".
-LANGUAGE = "pt"
+# The MANIM_LANGUAGE environment variable can override it for one render.
+LANGUAGE = os.environ.get("MANIM_LANGUAGE", "pt")
 
 SLIDE_SEQUENCE = [
     slide_01_balance,
